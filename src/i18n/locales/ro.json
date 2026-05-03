@@ -1,0 +1,83 @@
+{
+  "appTitle": "Panou Stare Zboruri",
+  "appSubtitle": "Plecări live · actualizate automat la 30s",
+  "search": {
+    "placeholder": "Caută după nr. zbor sau destinație"
+  },
+  "filter": {
+    "all": "Toate",
+    "groupByLabel": "Grupează după",
+    "filterBy": "Filtrează după {{label}}",
+    "terminals": "Terminale",
+    "gates": "Porți",
+    "expandPlaceholder": "Selectează grupurile de extins",
+    "selectAll": "Selectează tot",
+    "unselectAll": "Deselectează tot"
+  },
+  "status": {
+    "on-time": "La Timp",
+    "delayed": "Întârziat",
+    "cancelled": "Anulat"
+  },
+  "stats": {
+    "total": "Total zboruri",
+    "on-time": "La timp",
+    "delayed": "Întârziate",
+    "cancelled": "Anulate"
+  },
+  "group": {
+    "terminal": "Terminal {{value}}",
+    "gate": "Poarta {{value}}",
+    "byTerminal": "Terminal",
+    "byGate": "Poartă"
+  },
+  "flightCount_one": "{{count}} zbor",
+  "flightCount_few": "{{count}} zboruri",
+  "flightCount_other": "{{count}} de zboruri",
+  "row": {
+    "flight": "Zbor",
+    "destination": "Destinație",
+    "departure": "Plecare",
+    "terminal": "Terminal",
+    "gate": "Poartă",
+    "flightStatus": "Stare zbor"
+  },
+  "controls": {
+    "themeLabel": "Temă",
+    "themeDark": "Întunecată",
+    "themeLight": "Luminoasă",
+    "themeSwitchToDark": "Schimbă la tema întunecată",
+    "themeSwitchToLight": "Schimbă la tema luminoasă",
+    "languageLabel": "Limbă",
+    "languageEnglish": "Engleză",
+    "languageRomanian": "Română",
+    "languageSwitchToRomanian": "Schimbă la română",
+    "languageSwitchToEnglish": "Schimbă la engleză",
+    "lastUpdated": "Actualizat {{when}}",
+    "refresh": "Reîmprospătează",
+    "refreshNow": "Reîmprospătează acum",
+    "simulateError": "Simulează eroare",
+    "simulateErrorTooltip": "Comută simularea erorii de rețea"
+  },
+  "empty": "Niciun zbor nu corespunde filtrelor",
+  "loading": "Se încarcă zborurile…",
+  "errors": {
+    "couldNotLoad": "Nu s-au putut încărca zborurile",
+    "stale": "Datele pot fi vechi",
+    "staleDescription": "{{error}} — actualizat ultima dată {{when}}.",
+    "retry": "Reîncearcă"
+  },
+  "relativeTime": {
+    "justNow": "chiar acum",
+    "secondsAgo": "acum {{count}}s",
+    "minutesAgo_one": "acum {{count}} minut",
+    "minutesAgo_few": "acum {{count}} minute",
+    "minutesAgo_other": "acum {{count}} de minute",
+    "hoursAgo_one": "acum {{count}} oră",
+    "hoursAgo_few": "acum {{count}} ore",
+    "hoursAgo_other": "acum {{count}} de ore",
+    "daysAgo_one": "acum {{count}} zi",
+    "daysAgo_few": "acum {{count}} zile",
+    "daysAgo_other": "acum {{count}} de zile"
+  }
+}

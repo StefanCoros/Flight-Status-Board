@@ -1,0 +1,87 @@
+:root,
+:root[data-theme="dark"] {
+  --bg-page: #06080f;
+  --bg-page-gradient: linear-gradient(180deg, #06080f 0%, #0b1020 100%);
+  --bg-glow-1: rgba(22, 119, 255, 0.18);
+  --bg-glow-2: rgba(82, 196, 26, 0.1);
+
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.6);
+  --text-subtle: rgba(255, 255, 255, 0.55);
+  --text-muted: rgba(255, 255, 255, 0.5);
+  --text-tertiary: rgba(255, 255, 255, 0.45);
+  --text-faint: rgba(255, 255, 255, 0.65);
+
+  --surface: rgba(255, 255, 255, 0.03);
+  --surface-soft: rgba(255, 255, 255, 0.025);
+  --surface-flat: rgba(255, 255, 255, 0.02);
+  --surface-hover: rgba(255, 255, 255, 0.06);
+  --surface-active: rgba(255, 255, 255, 0.08);
+  --surface-sticky: rgba(8, 12, 24, 0.85);
+
+  --border: rgba(255, 255, 255, 0.06);
+  --border-soft: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.12);
+  --border-active: rgba(255, 255, 255, 0.18);
+
+  --accent-text-strong: #e6f4ff;
+  --accent-text: #d9e6ff;
+}
+
+:root[data-theme="light"] {
+  --bg-page: #f4f6fb;
+  --bg-page-gradient: linear-gradient(180deg, #f4f6fb 0%, #e7ecf6 100%);
+  --bg-glow-1: rgba(22, 119, 255, 0.12);
+  --bg-glow-2: rgba(82, 196, 26, 0.08);
+
+  --text-primary: #0b1020;
+  --text-secondary: rgba(11, 16, 32, 0.7);
+  --text-subtle: rgba(11, 16, 32, 0.6);
+  --text-muted: rgba(11, 16, 32, 0.55);
+  --text-tertiary: rgba(11, 16, 32, 0.5);
+  --text-faint: rgba(11, 16, 32, 0.65);
+
+  --surface: rgba(11, 16, 32, 0.04);
+  --surface-soft: rgba(11, 16, 32, 0.03);
+  --surface-flat: rgba(11, 16, 32, 0.02);
+  --surface-hover: rgba(11, 16, 32, 0.07);
+  --surface-active: rgba(22, 119, 255, 0.1);
+  --surface-sticky: rgba(244, 246, 251, 0.85);
+
+  --border: rgba(11, 16, 32, 0.1);
+  --border-soft: rgba(11, 16, 32, 0.08);
+  --border-strong: rgba(11, 16, 32, 0.16);
+  --border-active: rgba(11, 16, 32, 0.25);
+
+  --accent-text-strong: #1a3a8e;
+  --accent-text: #1a3a8e;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  background: var(--bg-page);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition:
+    background-color 250ms ease,
+    color 250ms ease;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,90 @@
+.row {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1.4fr) 100px 80px 80px 130px;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.15s ease;
+
+  & + & {
+    margin-top: 8px;
+  }
+
+  &:hover {
+    background: var(--surface-hover);
+    border-color: var(--border-strong);
+  }
+
+  &[data-status="cancelled"] {
+    border-left: 3px solid #ff4d4f;
+  }
+  &[data-status="delayed"] {
+    border-left: 3px solid #faad14;
+  }
+  &[data-status="on-time"] {
+    border-left: 3px solid #52c41a;
+  }
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-tertiary);
+  margin-bottom: 2px;
+}
+
+.flightNumber {
+  font-family:
+    "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo,
+    monospace;
+  font-weight: 600;
+  color: var(--accent-text-strong);
+  letter-spacing: 0.02em;
+}
+
+.destination {
+  font-weight: 500;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.time {
+  font-family:
+    "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo,
+    monospace;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent-text);
+}
+
+.gate {
+  font-weight: 600;
+  color: var(--accent-text);
+}
+
+.statusTag {
+  align-self: flex-start;
+  margin: 0;
+  font-weight: 600;
+}
+
+@media (max-width: 720px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+  }
+}

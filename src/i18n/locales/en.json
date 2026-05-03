@@ -1,0 +1,79 @@
+{
+  "appTitle": "Flight Status Dashboard",
+  "appSubtitle": "Live departures · auto-refreshed every 30s",
+  "search": {
+    "placeholder": "Search by flight # or destination"
+  },
+  "filter": {
+    "all": "All",
+    "groupByLabel": "Group by",
+    "filterBy": "Filter by {{label}}",
+    "terminals": "Terminals",
+    "gates": "Gates",
+    "expandPlaceholder": "Select groups to expand",
+    "selectAll": "Select all",
+    "unselectAll": "Unselect all"
+  },
+  "status": {
+    "on-time": "On Time",
+    "delayed": "Delayed",
+    "cancelled": "Cancelled"
+  },
+  "stats": {
+    "total": "Total flights",
+    "on-time": "On time",
+    "delayed": "Delayed",
+    "cancelled": "Cancelled"
+  },
+  "group": {
+    "terminal": "Terminal {{value}}",
+    "gate": "Gate {{value}}",
+    "byTerminal": "Terminal",
+    "byGate": "Gate"
+  },
+  "flightCount_one": "{{count}} flight",
+  "flightCount_other": "{{count}} flights",
+  "row": {
+    "flight": "Flight",
+    "destination": "Destination",
+    "departure": "Departure",
+    "terminal": "Terminal",
+    "gate": "Gate",
+    "flightStatus": "Flight Status"
+  },
+  "controls": {
+    "themeLabel": "Theme",
+    "themeDark": "Dark",
+    "themeLight": "Light",
+    "themeSwitchToDark": "Switch to dark theme",
+    "themeSwitchToLight": "Switch to light theme",
+    "languageLabel": "Language",
+    "languageEnglish": "English",
+    "languageRomanian": "Romanian",
+    "languageSwitchToRomanian": "Switch to Romanian",
+    "languageSwitchToEnglish": "Switch to English",
+    "lastUpdated": "Last updated {{when}}",
+    "refresh": "Refresh",
+    "refreshNow": "Refresh now",
+    "simulateError": "Simulate error",
+    "simulateErrorTooltip": "Toggle simulated network failure"
+  },
+  "empty": "No flights match your filters",
+  "loading": "Loading flights…",
+  "errors": {
+    "couldNotLoad": "Could not load flights",
+    "stale": "Data may be stale",
+    "staleDescription": "{{error}} — last updated {{when}}.",
+    "retry": "Retry"
+  },
+  "relativeTime": {
+    "justNow": "just now",
+    "secondsAgo": "{{count}}s ago",
+    "minutesAgo_one": "{{count}} min ago",
+    "minutesAgo_other": "{{count}} mins ago",
+    "hoursAgo_one": "{{count}} hour ago",
+    "hoursAgo_other": "{{count}} hours ago",
+    "daysAgo_one": "{{count}} day ago",
+    "daysAgo_other": "{{count}} days ago"
+  }
+}

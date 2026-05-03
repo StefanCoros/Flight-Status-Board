@@ -1,0 +1,49 @@
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-right: 8px;
+  border-right: 1px solid var(--border-soft);
+}
+
+.toggle:last-of-type {
+  border-right: 0;
+  padding-right: 0;
+}
+
+.toggleLabel {
+  font-size: 12px;
+  color: var(--text-subtle);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  user-select: none;
+  transition: color 120ms ease;
+
+  &:hover {
+    color: var(--text-primary);
+  }
+}
+
+.timestamp {
+  color: var(--text-secondary) !important;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+:global([data-theme="light"]) .toggle {
+  :global(.ant-switch:not(.ant-switch-checked)) {
+    background: rgba(11, 16, 32, 0.55);
+
+    &:hover {
+      background: rgba(11, 16, 32, 0.72);
+    }
+  }
+}

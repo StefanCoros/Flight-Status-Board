@@ -1,0 +1,11 @@
+.app {
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 600px at 80% -10%, var(--bg-glow-1), transparent 60%),
+    radial-gradient(1000px 600px at -10% 110%, var(--bg-glow-2), transparent 60%),
+    var(--bg-page-gradient);
+  color: var(--text-primary);
+  transition:
+    background 250ms ease,
+    color 250ms ease;
+}
