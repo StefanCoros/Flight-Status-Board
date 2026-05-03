@@ -59,7 +59,7 @@ const statCards: StatCardConfig[] = [
   { tone: "cancelled", filter: FlightStatus.Cancelled },
 ];
 
-const SEARCH_DEBOUNCE_MS = 3000;
+const SEARCH_DEBOUNCE_MS = 300;
 
 export const FlightBoard = (): ReactElement => {
   const { t } = useTranslation();
